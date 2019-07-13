@@ -1,23 +1,11 @@
 pipeline {
-  agent any
-  stages {
-    stage('Test') {
-      steps {
-        sh '''pipeline {
    agent any
-    
    stages {
-      stage(\'Say Hello\') {
+      stage('Say Hello') {
          steps {
-            echo \'Hello World!\'   
+            echo 'Hello World!'   
+            sh 'java -version'
          }
       }
    }
-}'''
-        }
-      }
-    }
-    environment {
-      Excercise1 = ''
-    }
-  }
+}
