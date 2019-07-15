@@ -1,7 +1,5 @@
 pipeline {
-   agent {
-    label 'jdk9'
-  }
+   agent { label 'jdk8' }
    stages {
       stage('Say Hello') {
          steps {
@@ -10,4 +8,4 @@ pipeline {
          }
       }
    }
-}
+}:wq
